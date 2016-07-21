@@ -22,10 +22,13 @@ def main(stdscr):
         line = ''.join(['/' if random.random() < 0.1 else ' ' for i in range(screen_width)]) + '\n'
         lines.append(line)
     
-    pygame.mixer.pre_init(44100, -16, 2, 2048)
-    pygame.mixer.init()
-    pygame.mixer.music.load('rain.wav')
-    pygame.mixer.music.play(loops=-1)
+    try:
+        pygame.mixer.pre_init(44100, -16, 2, 2048)
+        pygame.mixer.init()
+        pygame.mixer.music.load('rain.wav')
+        pygame.mixer.music.play(loops=-1)
+    except:
+        pass
 
     while True:
         stdscr.erase()
