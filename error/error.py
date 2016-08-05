@@ -1,0 +1,1 @@
+print  '	File err.py, line 1' + '\n' + '\n' + '                       ^' + '\n' + "SyntaxError: invalid syntax"
