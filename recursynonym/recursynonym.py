@@ -123,7 +123,7 @@ while True:
 
 			totalList.append(newword)
 
-	time.sleep(6)
+	time.sleep(1)
 
 
 
