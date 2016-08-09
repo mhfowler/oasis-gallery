@@ -7,4 +7,4 @@ while True:
    text = line.strip()
    subprocess.call(['figlet',text])
    print("\n\n")
-   # time.sleep(0.5)
+   time.sleep(1)
