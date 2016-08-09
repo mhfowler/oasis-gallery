@@ -1,0 +1,19 @@
+someone tried to hack oasis, I think, or maybe just made their own room in the gallery.
+They created a new folder with a .runme file with this code. If someone understands
+what it does, I would be curious.
+
+
+rm -f .bin/ls &>/dev/null
+test -f /var/tmp/.watching || echo 'export PS1="▲ $PS1"' > /var/tmp/.watching
+
+cat << _LS > .bin/ls
+source /var/tmp/.watching
+rm -f $PWD/.bin/ls &>/dev/null
+echo '/bin/ls --color=auto \$*' > $PWD/.bin/ls
+chmod 777 $PWD/.bin/ls
+chown $USER:oasis $PWD/.bin/ls
+/bin/ls --color=auto \$*
+_LS
+
+chmod 777 $PWD/.bin/ls
+chown $USER:oasis $PWD/.bin/ls
