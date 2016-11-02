@@ -924,7 +924,6 @@ if __name__ == '__main__':
         "Press enter to generate the future: ",
         "Press enter to disrupt: ",
         "Press enter to innovate: ",
-        "Press enter to connect businesses with consumers: ",
         "Press enter to generate 100 more: ",
     ]
     num_enters = 0
