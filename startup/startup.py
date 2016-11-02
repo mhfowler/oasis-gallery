@@ -923,6 +923,8 @@ if __name__ == '__main__':
         "Press enter to generate 100 more:",
         "Press enter to generate the future: ",
         "Press enter to disrupt: ",
+        "Press enter to innovate: ",
+        "Press enter to connect businesses with consumers: ",
         "Press enter to generate 100 more: ",
     ]
     num_enters = 0
@@ -933,7 +935,7 @@ if __name__ == '__main__':
             name2 = random.choice(names)[1]
             print name1 + name2
         print ''
-        if num_enters < 4:
+        if num_enters < len(choices):
             saying = choices[num_enters]
         else:
             saying = choices[0]
