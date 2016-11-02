@@ -8,5 +8,4 @@ def go(word):
 	else:
 		return "We have to go."
 
-while True:
-	print go(raw_input())
+

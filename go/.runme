@@ -1,5 +1,2 @@
 cat go.py
 echo ""
-echo ""
-read  -n 1 -p "Press enter to run go: "
-python go.py
