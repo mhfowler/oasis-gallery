@@ -1,5 +1,12 @@
 import time
 
+time.sleep(0.5)
+print 'You are about to see a pornographic image interpreted as a text file ' \
+      'with all letters removed which do not appear in the word boob.' \
+      '\n'
+raw_input('Press enter to see the boobs:')
+
+
 def translate_to_symbol(text):
     printed = ''
     for i in text:
